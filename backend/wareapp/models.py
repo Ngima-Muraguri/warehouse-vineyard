@@ -1,3 +1,144 @@
 from django.db import models
+from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
+
+
 
 # Create your models here.
+class Product(models.Model):
+    name=models.CharField(max_length=40)
+    product_image= CloudinaryField('image/')
+    description=models.CharField(max_length=40)
+    
+    def __str__(self):
+        return self.name
+
+    def create_product(self):
+        """
+        A method that creates a product
+        """
+        self.save()
+
+    def delete_product(self):
+        """
+        A method that deletes a product
+        """
+        self.delete()    
+
+    @classmethod
+    def update_product(cls, id):
+        """
+        A method that updates a product
+        """
+        product = cls.objects.filter(id=id).update(id=id)
+        return product       
+
+    # @classmethod
+    # def find_product(cls, product_id):
+    #     """
+    #     A method that finds a product using its id
+    #     """
+    #     return cls.objects.filter(id=product_id) 
+
+    @classmethod
+    def find_product(cls, product_id):
+        """
+        A method that finds a product using its id
+        """         
+        product = Product.objects.filter(id=product_id)
+        return product
+
+class Price(models.Model):
+    products=models.ForeignKey('Product',on_delete=models.CASCADE,null=True)
+    firstupperrange = models.PositiveIntegerField(null=False, blank=False, default=1)
+    firstlowerrange = models.PositiveIntegerField(null=False, blank=False, default=1)
+    secondupperrange = models.PositiveIntegerField(null=False, blank=False, default=1)
+    secondlowerrange = models.PositiveIntegerField(null=False, blank=False, default=1)
+    thirdupperrange = models.PositiveIntegerField(null=False, blank=False, default=1)
+    thirdlowerrange = models.PositiveIntegerField(null=False, blank=False, default=1)
+    firstprice= models.PositiveIntegerField(null=False, blank=False, default=1)
+    secondprice = models.PositiveIntegerField(null=False, blank=False,default=1)
+    thirdprice = models.PositiveIntegerField(null=False, blank=False, default=1)
+    
+
+
+class Orders(models.Model):
+    STATUS =(
+        ('Pending','Pending'),
+        ('Order Confirmed','Order Confirmed'),
+        ('Out for Delivery','Out for Delivery'),
+        ('Delivered','Delivered'),
+    )
+    customer=models.ForeignKey('Customer', on_delete=models.CASCADE,null=True)
+    product=models.ForeignKey('Product',on_delete=models.CASCADE,null=True)
+    email = models.CharField(max_length=50,null=True)
+    address = models.CharField(max_length=500,null=True)
+    mobile = models.CharField(max_length=20,null=True)
+    order_date= models.DateField(auto_now_add=True,null=True)
+    status=models.CharField(max_length=50,null=True,choices=STATUS)
+
+    def __str__(self):
+        return self.email
+
+
+class Customer(models.Model):
+    first_name = models.CharField(max_length=225, default="", blank=True)
+    user=models.OneToOneField(User,on_delete=models.CASCADE)
+    profile_pic= CloudinaryField('image/')
+    address = models.CharField(max_length=40)
+    mobile = models.CharField(max_length=20,null=False)
+
+    # @property
+    # def get_id(self):
+    #     return self.user.first-
+    
+    def __str__(self):
+        return self.first_name
+
+    @classmethod
+    def update_customer(cls, id):
+        """
+        A method that updates a customer
+        """
+        customer = cls.objects.filter(id=id).update(id=id)
+        return customer 
+
+
+class Inventory(models.Model):
+    name = models.CharField(max_length=100, null=False, blank=False)
+    cost_per_item = models.DecimalField(max_digits=19, decimal_places=2, null=False, blank=False)
+    quantity_in_stock = models.IntegerField(null=False, blank=False)
+    quantity_sold = models.IntegerField(null=False, blank=False)
+    sales = models.DecimalField(max_digits=19, decimal_places=2, null=False, blank=False)
+    stock_date = models.DateField(auto_now_add=True)
+    last_sales_date = models.DateField(auto_now=True)
+
+    def __str__(self) -> str:
+        return self.name
+
+    def create_inventory(self):
+        """
+        A method that creates an inventory
+        """
+        self.save()
+
+    def delete_inventory(self):
+        """
+        A method that deletes an inventory
+        """
+        self.delete()    
+
+    @classmethod
+    def update_inventory(cls, id):
+        """
+        A method that updates an inventory
+        """
+        inventory = cls.objects.filter(id=id).update(id=id)
+        return inventory    
+
+class OrderItem(models.Model):
+    order_id = models.ForeignKey('Orders', on_delete=models.CASCADE,null=True)
+    quantity = models.IntegerField(null=True)
+
+    def __int__(self):
+        return self.quantity
