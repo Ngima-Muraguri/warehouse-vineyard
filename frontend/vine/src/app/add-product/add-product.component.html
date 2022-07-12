@@ -1,1 +1,35 @@
-<p>add-product works!</p>
+<div class="top">
+    <nav class="navbar navbar-dark" style="background-color : #017A82;">
+      <a class="navbar-brand" href="#">VineYard</a>
+       <a class="nav-link" routerLink="active" routerLink="/admin-panel">Admin panel</a>
+      <a class="nav-link" routerLink="active" routerLink="/inventory">Inventory</a>
+      <a class="nav-link" routerLink="active" routerLink="/add-inventory">Add Inventory</a>
+      <a class="nav-link" routerLink="active" routerLink="/logout">Logout</a>
+    </nav>
+    </div>
+<div class=" card container" style="background-color:#f5f5f5; width: 30vw; margin-top: 8%; border-radius: 1rem;">
+<h5>Add new product</h5>
+<div class="form-col">
+  <div class="col-md-6 mb-3">
+    <label for="validationServer01">Product Name</label>
+    <input type="text" class="form-control" style="width: 20vw;" value="Product Name" required name="product_name" ngModel>
+  </div>
+  <div class="col-md-6 mb-3">
+            <label for="validationServer01">description</label>
+            <input type="text" class="form-control" style="width: 20vw;"value="description" required name="product_description" ngModel>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationServer01">price</label>
+            <input type="text" class="form-control" style="width: 20vw;"value="price" required name="product_price" ngModel>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationServer01">product image</label>
+            <input type="text" class="form-control" style="width: 6vw;"value="image" required name="product_image" ngModel>
+          </div>
+          <p>chooseimage</p>
+</div>
+<div>
+<button class="btn btn-primary" style="background-color: #94D164; margin-bottom: 30px;border-radius: 3rem;" type="Add product">Add product</button>
+</div>
+</div>
+

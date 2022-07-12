@@ -1,1 +1,65 @@
-<p>admin-panel works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+  <div class="col-md-5">
+    <div class="navbar navbar-expand d-flex flex-column align-item-start" id="sidenav">
+        <a href="" class="navbar-brand text-light mt-5">
+            <div class="display-5 font-weight-bold">Vineyard</div>
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt-5 w-100" style="list-style-type:disc" >
+            <li class="nav-item w-100">
+                <a class="nav-link text-light pl-4 " routerLink="active" routerLink="admin-panel">Admin Panel</a>
+            </li>
+            <br>
+            <br>
+            <li class="nav-item w-100" style="">
+                <a href="" class="nav-link text-light pl-4 " routerLink="active" routerLink="/manage-products">Manage Products</a>
+            </li>
+            <br>
+            <br>
+            <li class="nav-item w-100" style="">
+                <a href="" class="nav-link text-light pl-4 " routerLink="active" routerLink="/admin-panel">Orders</a>
+            </li>
+            <br>
+            <br>
+            <li class="nav-item w-100" style="">
+                <a href="" class="nav-link text-light pl-4 " routerLink="active" routerLink="/inventory">Inventory</a>
+            </li>
+            <br>
+            <button class="" btn style="border-radius:20px; background-color:#017a82 ;"style="width: 100px; margin-left: 40px;" routerLink="active" routerLink="/logout">Logout</button>
+        </ul>
+      </div>
+  </div>
+  <div class="col-md-7" >
+    <br>
+    <br>
+    <div class="card-group" style="width:80vw ; height: 10px;margin-left: 13rem;height:10vh; ">
+        <div class="card" style="height:20vh" >
+          <div class="card-body" style="background-color:#E8FCF8;height:5vh;">
+            <h5 class="card-title">1<i class="fas fa-user"></i></h5>
+            <p class="card-text">Registered Customers</p>
+          </div>
+        </div>
+        <div class="card" style="height:20vh;">
+            <div class="card-body" style="background-color:#E8FCF8;height:5vh;">
+                <h5 class="card-title">2<i class="fas fa-shopping-basket"></i></h5>
+                <p class="card-text">Total Products</p>
+          </div>
+        </div>
+        <div class="card" style="height:20vh;">
+            <div class="card-body" style="background-color:#E8FCF8;height:5vh;">
+                <h5 class="card-title">3<i class="fas fa-chart-line"></i></h5>
+                <p class="card-text">Total Orders</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
