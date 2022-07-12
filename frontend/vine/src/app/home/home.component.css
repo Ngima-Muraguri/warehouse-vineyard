@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #017A82 !important;
+    height: 10vh;
+}
+li{
+    display: inline-flex;
+}
+a{
+    color: #fff !important;
+}
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+.midsection{
+    background-color: #F5F5F5;
+    margin-bottom: 50px;
+}
+.qualitypart{
+    align-items: center;
+    text-align: center;
+}
+.intro{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.btn{
+    border-radius: 20px
+}
