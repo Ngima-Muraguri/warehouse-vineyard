@@ -1,1 +1,163 @@
-<p>home works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid" >
+    <h2> <a  class="navbar-brand" href="#">Vineyard</a></h2>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;" >
+      <ul class="navbar-nav" style="display:flex;" style="justify-content: space-around;">
+        <li class="nav-item active">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#Shopping">Shopping</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#Admin">Admin</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#Dashboard">Dashboard</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="active" routerLink="/login">login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="container intro">
+<div class="row">
+  <div class="col-md-8">
+    <img src="https://s3-alpha-sig.figma.com/img/4e08/aaa1/a16d01e95721a8dcd04e5672ae8f9c9d?Expires=1657497600&Signature=ZYNACcde8iD2KAZAf4MPXc~5aEfU6k929uSQvAzrPRKe3TXL3sPxz2OCIZxMKXavHkuqOBBa7uWEEiVT476rBoe7rfpwWydqVrxOtYymGDM2xj1SdRZvbLloBSxKx3eTymm-OkRjLYOE6oufsM4cYCvlCqfLcdhvpJ6LqoGOiNpVYL~c1RTlqbODi~uol2~QmpZgV6jUgPScIygebfxcxfy4AekHrkGHOBvUVE~uabSbnnapS7s5SdqE52JEB~D3lKrx-dnLeOGYF4i5QfzDdGm9mh3DtGoRo-ZBaqRHZvhmLLnG6PPyo~trxAM7mA4reGQjfGZ39PH4DHvmo~p1WA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" style="height:75vh;" alt="">
+  </div>
+  <div class="col--md-4">
+    <p class="card-text" style="font-size: 1.5em;">Shop from a wide range of products, all at the Comfort of your home</p>
+    <a href="#" class="btn btn-primary" style="background-color: #2D857F;align-items: center;" >Get started now</a>
+  </div>
+</div>
+</section>
+<h3 style="color: #2D857F; margin: 30px;">Why Shop with us?</h3>
+<div class="container midsection" style="align-items: center">
+<div class="card-group">
+  <div class="card" style="align-items: center; border: none;">
+    <img src="https://s3-alpha-sig.figma.com/img/acd0/ce29/fdfc2e474b98a35454cc4deb2b7c176f?Expires=1657497600&Signature=cjz3RKYcGzAfpX0Rd8vljqpJSz5LoHpPmpx96WQM~SyTLy45NxooY49B026uiwsN80VYeKMouDQYbo8CfDjEU8E8H3-rJHtGIQyU74l8JLS39ulEk-40Og1YhblVsx4qSfKbd48AExkTscw5yPJKmcZSWvho7bsPBG420AWubpYG0Vc6QWLJiEoWt91J14KDjZrXp80CYv5zv-yw9KMSt7p3BWMDi6eKWQr5kMFNLUoQzeiAT-MCO0~uOYJ5wQ3DXFFw-ztLYA9STK~LfiKm4MYt0hzevGT-nGTYlJnqu05jZxMhruAO1g78DcyhfEu0zEGCIS8X4uK8hwUvs9NAIw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" class="card-img-top" style="height: 5vh;width:3vw;" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Real easy</h5>
+      <p class="card-text">Create an account with Vineyard and make your preffered orders at the comfort of your home</p>
+    </div>
+  </div>
+  <div class="card" style="align-items: center; border: none;">
+    <img src="https://s3-alpha-sig.figma.com/img/261b/9437/d45d0765ab92507054e716d339b99ce2?Expires=1657497600&Signature=NvqRsHpq65p7nrE0gM58FFhSw2jI3iHJfnq2UbW0UdkGrJ5XIVSqB9VTJ8Q3gPLO9GGjGsKZpqsg-98jtBLJ2lRzgbUyQld9807J4TYAOlfXYVgjh~1X0mQyvZLGpmu1xYtZ8-1-ZLcam3W~JnKbezhuVunPCi4fDUH9ARIxX1A11bsxy0aNYVaH5Rfdnk8PMLcc1JH1S3QoglWHt1PAZdDpsi0vccjIfNE3jYH6clRiBf0gusK6kNft6J2xBkLi7hsq-Rv6LbFTVYMbl9jqRQIdm~UBxbP-9l4yppQeatOtoOLK23Q54RqPyb8-tknfv1f9lgMo9X2AE4ak0nTX5Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" class="card-img-top" style="height: 5vh;width:5vw;"  alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Save</h5>
+      <p class="card-text">Save your money and time with realtime offers on selected items and discounts.</p>
+    </div>
+  </div>
+  <div class="card" style="align-items: center; border: none; text-align: center;">
+    <img src="https://s3-alpha-sig.figma.com/img/f6e2/5acf/a6a0e2b021c86602310d5ae99c3b5f46?Expires=1657497600&Signature=RIF0ter2iSYjIsfO5D2h7Lh3K44kDV6yWwvTGRiCFz6E5j8DJzj5MBQy3eanN4GtiJgfYYKMDg-6X9vCVzCn8C5XIfplnT1pEFw5B8q29PSwG2SSc2yrEBTiMqT2-WFuDcRdvALB3fn8u4zLV5~xr9uNLFZEEJ8qLQFkW2tiMi17dJo8fXeERmqGpEZgwW0RKFuiocvPoVaXTV93ss~dX2tTIigYDD~E79bWpF6W8G4iqUrhurfBcwYs12iQb9QLZhjbsNRyU0BN7qlfMhKUR4EVQZj3B6O~HaPsKL4ef7bS9tC1tugYkXp64U5cL44gwpCy7lOQMkzfor1G-VJ0cA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" class="card-img-top" style="height: 5vh;width:3vw;"  alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Doorstep delivery</h5>
+      <p class="card-text">Purchase your goods and get them delivered to your location in no time.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+<div class="container qualitypart" style="text-align: center;">
+  <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="card-body">
+          <img src="https://s3-alpha-sig.figma.com/img/a02e/67d3/7bef1a47514fd7fc6bc7d48e29f1d593?Expires=1657497600&Signature=RUAFF2USizMvW6aBlp9XNWBub0nEkhAUBNBMC4KIPqHgTrQAw7HK2ZUynZe7Mgaou1w6e5XAraq5gxGjwYE~tII6zCa4icBuZUIryGGoUOGLmeOZv89~qqirSELv70ThAIOLCDk2ZUlNJtjvHCWQwrFgkTm7nrXwlwAx30HFGL2ALMjSUBe4h6jSjxvRIdX6X0vI73bHzsMGNQsxjAYYgfkPE~g2pxYBlHN~cZiGkpltQ3yuu4wVUqL8ygGvrWFvjo0jWK34hXKTttFe4PeWQzHgb1FabIbpplnoPs~wUn50dlWfk~X0xHND3My6tbIZjMahhcsW2Wj4vT1LkkUc~A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" style="height:200px;" alt="">
+         </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="card-body">
+          <h4 style="color: #2D857F;font-size: 30px;">Quantity With Quality</h4>
+          <p style="margin-left: 50px;">Shop from a wide range of products, all at the Comfort of your home.</p>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="container" style="text-align: center;">
+  <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="card-body">
+          <h4 style="color: #2D857F;font-size: 30px;">Understand where and when to Buy</h4>
+          <p style="margin-left: 50px;">We have a complete view of customer spending including purchases they make at competitors. This purchase intelligence is the foundation of everything we do.</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="card-body">
+          <img src="https://mdiscounts.co.ke/wp-content/uploads/2022/06/Person-using-phone.svg" style="height: 240px;margin-right: 150px;" alt="">
+         </div>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="card-body">
+          <img src="https://s3-alpha-sig.figma.com/img/9ed0/ab0b/38104047ed1bb9b41ed5b23a2df61af0?Expires=1657497600&Signature=hFjq96xHrvtEWgn-53ECdhlJMlsI2SpKwWSk6tuTSy3js98UA2ChwssyapwRc0JAsWd-6XY4~lDK5Wpv4T1HxBxgtA1mhX0ad0uggdDIYpQAhhD0QL50ilqhpci3t7HPY8I5ZJjoZyJtEk8~3ztW-BFetXrVHf8dt1xIn-Shao9SQUw0tnGUZZy8ihOmWpLqBrap~fGL503e~yxc4QaKCq8W2UanzhJDH3K1UYXUzvYdLa~2n8xpPgU1BOiniIFdyth9KdjlrvalKtQfZwxR1TXNroPnTvAZm47iDn3zPHw1GvmRGv9PAWKkO2wl8lWZArDKKZEJ2ZupSbFrmgdtHg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" style="height:300px;" alt="">
+         </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="card-body">
+          <h4 style="color: #2D857F;font-size: 30px;">Rewarding experience</h4>
+          <p style="margin-left: 50px;">As a customer you are our no.1 priority. we value our customer loyalty and we strive to satisfy your needs and wants. </p>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="row col-md-12">
+  <div class="col-sm-3">
+  </div>
+  <div class="col-sm-6">
+    <h5 style="text-align: center;">Trusted partner  for the largest brands and financial institutions:</h5>
+  </div>
+  <div class="col-sm-3">
+  </div>
+</div>
+<div class="col-sm-4">
+</div>
+<div class="col-md-12 d-flex flex-row">
+  <div class="col-md-2"></div>
+  <div class="col-md-2">
+    <img src="https://s3-alpha-sig.figma.com/img/233c/4e2b/30117aa715f114bb164e5a632c2beee0?Expires=1658102400&Signature=di~DST371QiXeJs5LR3gSSdpqFp7i16HcMadff1vTv2psNmWNI5HT5fwBaxscWXLFLy3SSLdSk3G8CHHPttxV1jEiMrWxVQtu04RBzDV9sSyhgcuDTVDtVqXoKOyclvY0jsWuyqF7oOTiY7BvpAQ1seVT1q8UrJsJgNaAFJhE~fZWO0CH~K3OzuEZfn-Q-GVnHB-g6mwD9qy7sO2lgyrz-F5rIfBcqN4R~cUPVYmDUVMj1cpEFdM6k7SxK17t68s9xlVURXJD-TVLrZR0DiYrQuntEnt9SC8AT~YNcAE-~L9If59mI5kJw8GkwZxqlGoso7pM~xZTVviyaQZTuw-sA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" style="height: 120px;" alt="">
+  </div>
+  <div class="col-md-2">
+    <img src="https://s3-alpha-sig.figma.com/img/3cb6/de79/da9394600a7c24a5ef8edfce636299f5?Expires=1658102400&Signature=faZNNAA7d01-juQksmajFsErY-3hVISNiT6hCBY8S5uIIeQWSrK5jS7BwhrmXb5ymO9j2p-VXOPB7660XYIZAKH9VTtDM-o-gTFBu0eCn6vdSu5-Qfkacz8tzhJE-GLgIiS8QSPU2nfq0yS5kw~eMBdCFjjivHtWwSX4H2m4XMAZZrY-hQbYR--5jwymZL6N-7zwP9eRnO57cgi8-0yZ9sNv36U9Z60dfQ7Ev~rQBeJm1WxUYQh7~vtljvShM89WY5gYM7AD241ECBdSTv6lJGkAe66rpPYW-hp3wTztbu3XJY5cQ0Fq-chswNxxManalRZ3Tw0WSDeNAX08XcA6sw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" style="height: 100px;" alt="">
+  </div>
+  <div class="col-md-2">
+    <img src="https://s3-alpha-sig.figma.com/img/3e76/d067/52bab450354b57eaf0f16b8ec961b384?Expires=1658102400&Signature=DHcb~fUvUYHN2bbe91z4TlBD94IEOC8wk8x6cOYb1P1VzwsvERLstPzYhAQjlkljtMqKQ38-I23WClS1T24JYI66Xw~6m9wOraPknezCihPCEL2OlrMGHNcWcPsl08inlWK0IO4~-EvpxIidhJKz5tyopyhmGk8Wp0BI8Ia4Y6KULx1acoa4vr0Gs5KcrGs-m-n9nw~-8ldTQF88cKmFXshaskVVCD5fBYpxQprwjRX7qqU4upTXGyijUQ5VYNyhW3dnDbTHZDmkAPohjrYJNH7d2kXdJSOOiXA9NVmdeH3ncfQzzw8LT8Lo~BTS4MHhX~RJOr0jkZdETdfAw733Wg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" style="height: 100px;" alt="">
+  </div>
+  <div class="col-md-2">
+    <img src="https://s3-alpha-sig.figma.com/img/11dd/9acb/3210c51fd6e4e6820fd73e210719032f?Expires=1658102400&Signature=g0lXIGFQDnNZe2Z0YCBHDRM0yGR1~wn8KD~M0ltapvwMy~TMaEtcEJapW9s1QHoRSDVWXuNYkupyFtHsPr~0Bs2Rl5VZzgLRf2UJAwVUnDJ5IZZcw6yEd9hzFW4mLZj-EAh6CpJakMrQR1Dbap8YTxuztjWTxZGyT52lzeWttXT78Jb4D-gZn-F~Xes0xKiuKS9zAIk5rtuYi8Pu3gMCKmbC7HE3kJ~krhwnAEb5PhVLOb98TMRKJYLm6gZBCMCLUHDmf8sgAm~hrenAKNlyP4aDxvNsyrZ42gtl9nVzvA-OiNukNmYYaDyoyMpVEsKIEXJCWWFdbSpAprL5Ioq9jQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" style="height: 70px;" alt="">
+  </div>
+  <div class="col-md-2"></div>
+</div>
+<footer class="page-footer col-md-12">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background-color:#2d857f; height:50px; color: #fff;">
+    <ul class="fa-ul d-flex justify-content-center">
+      <li style="padding-right: 1rem;"><i class="fa fa-phone-square" style="color:rgb(46, 174, 46) !important;"></i></li>
+      <li style="padding-right: 1rem;"><i class="fab fa-twitter" style="color:rgb(2, 8, 12) !important;"></i></li>
+      <li style="padding-right: 1rem;"><i class="fab fa-instagram" style="color:rgb(223, 32, 61)  !important;"></i> </li>
+      <li style="padding-right: 1rem;"><i class="fab fa-google" style="color:rgb(223, 18, 18)  !important;"></i> </li>
+      <li style="padding-right: 1rem;"><i class="fab fa-facebook-f" style="color:rgb(6, 53, 139) !important;"></i> </li>
+    </ul>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>
