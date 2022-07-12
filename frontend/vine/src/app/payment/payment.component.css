@@ -1,0 +1,14 @@
+*{
+    background-color: #18C3B9;
+    
+}
+
+.local{
+    background-color: white;
+}    
+   
+    
+.row{
+    display: flex;
+   
+}
