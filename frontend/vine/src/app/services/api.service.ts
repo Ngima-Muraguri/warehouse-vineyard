@@ -10,6 +10,11 @@ import { map } from 'rxjs/operators';
 export class ApiService {
   constructor(private http: HttpClient) {}
 
+  ngOnInit(): void {
+    this.api.getProduct().subscribe((res) => {
+      this.productList = res;
+    });
+  }
   getProfile() {
     return this.http.get<any>('profile link').pipe(
       map((res: any) => {
