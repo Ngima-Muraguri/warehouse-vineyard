@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/services/api.service';
 
 @Component({
   selector: 'app-single-product',
@@ -7,9 +8,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingleProductComponent implements OnInit {
 
-  constructor() { }
+  public priceList: any;
+  public productList: any;
+
+
+  constructor(private api: ApiService) { }
+
+
 
   ngOnInit(): void {
+    this.api.getPrice()
+      .subscribe(res => {
+        this.priceList = res;
+        console.log(this.priceList)
+      })
+
+      this.api.getProduct()
+      .subscribe(res => {
+        this.productList = res;
+        console.log(this.productList)
+      })
   }
 
+  
+    
 }
+
+  
+    

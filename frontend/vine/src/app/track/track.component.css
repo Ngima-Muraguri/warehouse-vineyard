@@ -1,0 +1,62 @@
+.navbar-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    
+
+}
+
+.nav-link{
+    margin-left: 50px;
+    align-items: center;
+    flex: end;
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.part{
+    display: flex;
+    
+}
+
+.line{
+    height: 5px;
+    width: 100%;
+    background-color: lightgrey;
+    position: relative;
+}
+.line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0%;
+    top: 0%;
+    background-color:  #dd0256;
+}
+
+.pend::before{
+    width: 90%;
+}
+.order::before{
+    width: 80%;
+}
+.out::before{
+    width: 20%;
+}
+.deli::before{
+    width: 60%;
+}
+
+.for{
+    width: 50px;
+}
+.hello{
+    display: flex;
+    padding: 100px;
+}

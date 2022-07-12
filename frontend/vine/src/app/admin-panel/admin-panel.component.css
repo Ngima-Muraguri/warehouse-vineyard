@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #fff;
+}
+.navbar{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    transition: 0.4s;
+    background-color:#18C3B9 ;
+}
+nav-link{
+    font-size: 1.25em;
+    margin-left: 40px;
+}
+.nav-link:hover{
+    background-color: rgb(255, 255, 255);
+    color: #0D504C !important;
+    border-radius: 20px;
+}
+.card-group{
+    position: relative;
+    width: 50vw;
+    left: 10%;
+}
+.card{
+    display: flex;
+    margin: 30px;
+    width: 50px;
+}
+.navbar-nav{
+    justify-content: space-between;
+    float: inline-end;
+}
+.card-title{
+    font-weight: bold;
+}
+.card-text{
+    height: 200vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+

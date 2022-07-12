@@ -41,7 +41,7 @@ const routes: Routes = [
   {path: 'edit-profile', component:EditProfileComponent},
   {path: 'cart', component:CartComponent},
   {path: 'add-inventory', component:AddInventoryComponent},
-  {path: 'profile', component:ProfileComponent}
+  {path: 'profile', component:ProfileComponent},
 ];
 
 @NgModule({
