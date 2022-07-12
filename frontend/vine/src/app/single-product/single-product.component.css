@@ -1,0 +1,41 @@
+.button-grp{
+          background-color:#017A82 ;
+      }
+      h4{
+          text-align: center;
+      }
+      .card
+      {
+          align-items: center;
+          justify-content: space-around ;
+          display: flex;
+          width: 50%;
+          padding: 20px;
+          margin-left: 300px;
+          background-color: #18C3B9;
+      }
+      .product-image{
+          float: left;
+      }
+      .top{
+          height: 100vh;
+          align-items: center;
+          margin: 100px;
+      }
+      .navbar{
+          background-color: #017A82;
+          color: white
+      }
+      .navbar-nav{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          color: white;
+          width: 100%;
+      }
+      .nav-link{
+          margin-left: 50px;
+          align-items: center;
+          flex: end;
+          color: white;
+      }

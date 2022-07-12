@@ -1,1 +1,83 @@
-<p>single-product works!</p>
+<header>
+  <div style="background-color:#017a82 ; color: white;" class="navbar ">
+    <div class="navbar-brand align-item-center d-flex">
+      <em style="font-size: 30px;">VineYard</em>
+      <div>
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item d-flex">
+            <a class="nav-link" routerLink="active" routerLink="/home">Home</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="active" routerLink="/cart">Cart</a>
+          </li>
+          <li>
+            <a class="nav-link" routerLink="active" routerLink="/profile">Profile</a>
+          </li>
+          <li>
+            <a class="nav-link" routerLink="active" routerLink="/products">Back</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="container top">
+
+  <div class="card">
+
+    <ng-container *ngFor="let commodity of productList">
+      <div class="product-image">
+        <h4 class="">{{commodity.name}}</h4>
+        <!-- <img src="{{commodity.product_image}}" alt="image"> -->
+      </div>
+    </ng-container>
+
+
+
+
+    <div class="">
+      <div class=" ">
+
+        <ng-container *ngFor="let range of priceList">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>boxes</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{range.firstupperrange}} - {{range.firstlowerrange}}</td>
+                <td>{{range.firstprice}}</td>
+              </tr>
+              <tr>
+                <td>{{range.secondupperrange}} - {{range.secondlowerrange}}</td>
+                <td>{{range.secondprice}}</td>
+              </tr>
+              <tr>
+                <td>{{range.thirdupperrange}} and above</td>
+                <td>{{range.thirdprice}}</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </ng-container>
+
+        <div class="">
+          <form action="" style="padding: 15px;">
+            <label for="">Quantity</label>
+            <input type="number" min="20">
+          </form>
+          <a href=""><button style="background-color: #017A82; border-radius: 3rem; color: white;">
+              ADD TO CART
+            </button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
